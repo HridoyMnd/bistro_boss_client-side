@@ -15,17 +15,24 @@ import '../App.css'
 
 // import required modules
 import { Autoplay, Pagination } from 'swiper/modules';
+import Section_Title from './Section_Title';
 
 const Category = () => {
     return (
         <>
+            <Section_Title
+                subHeading={"---- from 11:00am to 10:00pm----"}
+                heading={"ORDER online"}
+            >
+
+            </Section_Title>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
                 autoplay={{
                     delay: 2000,
                     disableOnInteraction: false,
-                  }}
+                }}
                 pagination={{
                     clickable: true,
                 }}
@@ -43,26 +50,49 @@ const Category = () => {
                         spaceBetween: 50,
                     },
                 }}
-                modules={[ Autoplay,Pagination]}
+                modules={[Autoplay, Pagination]}
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img src={img_1} alt="" />
+                    <div>
+                        <img src={img_1} alt="" />
+                        <h4 className='text-center text-3xl -mt-20 uppercase text-gray-600'>salad</h4>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img_2} alt="" />
+                    <div>
+                        <img src={img_2} alt="" />
+                        <h4 className='text-center text-3xl -mt-20 uppercase text-gray-600'>salad</h4>
+                    </div>
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img_3} alt="" />
+                    <div>
+                        <img src={img_3} alt="" />
+                        <h4 className='text-center text-3xl -mt-20 uppercase text-gray-600'>salad</h4>
+                    </div>
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img_4} alt="" />
+                    <div>
+                        <img src={img_4} alt="" />
+                        <h4 className='text-center text-3xl -mt-20 uppercase text-gray-600'>salad</h4>
+                    </div>
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img_5} alt="" />
+                    <div>
+                        <img src={img_5} alt="" />
+                        <h4 className='text-center text-3xl -mt-20 uppercase text-gray-600'>salad</h4>
+                    </div>
+
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={img_3} alt="" />
+                    <div>
+                        <img src={img_3} alt="" />
+                        <h4 className='text-center text-3xl -mt-20 uppercase text-gray-600'>salad</h4>
+                    </div>
+
                 </SwiperSlide>
 
             </Swiper>
