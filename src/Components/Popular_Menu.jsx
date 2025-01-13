@@ -1,6 +1,7 @@
 import Section_Title from './Section_Title';
 import Menu from './Menu';
 import UseMenu from '../Hooks/UseMenu';
+import Menu_Button from './Menu_Button';
 
 const Popular_Menu = () => {
     const [MenuItems] = UseMenu();
@@ -22,9 +23,7 @@ const Popular_Menu = () => {
                 }
 
             </section>
-            <button className='uppercase text-lg font-semibold border-b-2 rounded-lg border-black block mx-auto px-5 py-2 my-4'>
-                View Full Menu
-            </button>
+            <Menu_Button btn_value={"view full menu"} />
 
         </div>
     );

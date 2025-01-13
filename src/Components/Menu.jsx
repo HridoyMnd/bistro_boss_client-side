@@ -5,8 +5,8 @@ const Menu = ({ img, h3, p, price }) => {
     return (
         <div>
             <div className='flex text-center'>
-                <div className='w-20 h-16 '>
-                    <img src={img} alt="" className='object-fill w-full h-full rounded-r-[200px] rounded-bl-[200px]' />
+                <div className='w-20 h-16  '>
+                    <img src={img} alt="" className='object-cover w-full h-full rounded-r-[200px] rounded-bl-[200px]' />
                 </div>
                 <div className='text-left ml-2'>
                     <h3 className='text-lg font-semibold'>{h3} </h3>
