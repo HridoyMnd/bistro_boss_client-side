@@ -1,5 +1,6 @@
 
 
+// eslint-disable-next-line react/prop-types
 const Menu = ({ img, h3, p, price }) => {
     return (
         <div>

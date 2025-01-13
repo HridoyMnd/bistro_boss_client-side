@@ -1,7 +1,5 @@
 
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/pagination';
 import img_1 from '../../src/assets/slide1.jpg'
@@ -9,8 +7,6 @@ import img_2 from '../../src/assets/slide2.jpg'
 import img_3 from '../../src/assets/slide3.jpg'
 import img_4 from '../../src/assets/slide4.jpg'
 import img_5 from '../../src/assets/slide5.jpg'
-
-// import './styles.css';
 import '../App.css'
 
 // import required modules
@@ -23,10 +19,10 @@ const Category = () => {
             <Section_Title
                 subHeading={"---- from 11:00am to 10:00pm----"}
                 heading={"ORDER online"}
-            >
-
-            </Section_Title>
+            />
             <Swiper
+
+            // slider control system
                 slidesPerView={1}
                 spaceBetween={10}
                 autoplay={{
